@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+  
+  header {
+    background-color: #000000;
+    color: #a70707;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    color: #a01212;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 33px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #950909;
+    padding: 20px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  img {
+    width: 1600px;
+    height: 700;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header menu menu menu'
+      'header header header menu menu menu';
+    gap: 10px;
+    background-color: #000000;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item2 {
+    color: aliceblue;
+    font-family: 'Bebas Neue', sans-serif;
+  }
